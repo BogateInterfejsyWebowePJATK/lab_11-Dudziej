@@ -1,20 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import All from "./components/all";
 
-function App() {
- const array = [];
- for(let i=0; i<11; i++){
-    array.push(<li>{Math.floor(Math.random() * 100)}</li>)
-  }
+export default function App() {
 
-  const refreshPage = ()=>{
-     window.location.reload();
-  }
-  return(<div>
-        <ul>{array}</ul>
-        <button onClick={refreshPage}>Refresh</button>
-        </div>);
-    
-}
-export default App;
+  return (<div id="all"><All/></div>)}
